@@ -16,7 +16,7 @@ bot.on('ready', () => {
 bot.on('message', msg => {
     console.log(msg.content)
     console.log(msg.author.id);
-    console.log(msg.lastMessageChannelID);
+    console.log(msg.channel);
     // var randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
     var victim = msg.content.substring(7);
     var channel = bot.channels.cache.get(msg.lastMessageChannelID);
