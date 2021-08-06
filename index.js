@@ -19,7 +19,7 @@ bot.on('message', msg => {
 
     // var randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
 
-    if (msg.content === "!bully @" + user.username) {
+    if (msg.content === "test") {
         msg.reply("Test Successful");
     }
 
