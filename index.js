@@ -17,10 +17,11 @@ bot.on('message', msg => {
     console.log(msg);
     // console.log(msg.content)
     // console.log(msg.author.id);
-
+    var victim = msg.content.substring(7);
+    console.log(victim);
     // var randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
 
-    if (msg.content === "test") {
+    if (msg.content === "!bully " + victim) {
         msg.reply("Test Successful");
     }
 
