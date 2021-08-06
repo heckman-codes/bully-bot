@@ -24,9 +24,9 @@ bot.on('message', msg => {
     }
 
 
-    if (msg.content === "!bully" + user.username) {
-        msg.reply("Just Checking");
-    }
+    // if (msg.content === "!bully" + user.username) {
+    //     msg.reply("Just Checking");
+    // }
 
     // if (msg.author.id === "175647516329508864") {
     //     msg.reply("You're adopted.")
