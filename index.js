@@ -18,7 +18,7 @@ bot.on('message', msg => {
     console.log(msg.author.id);
     // var randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
     var victim = msg.content.substring(7);
-    const channel = Discord.Client().channels.cache.get(msg.lastMessageChannelID);
+    const channel = bot.channels.cache.get(msg.lastMessageChannelID);
 
     if (msg.content === "!bully " + victim) {
         channel.send(victim + " Hey, _nerd_ I'll see you behind the bleachers after school.");
