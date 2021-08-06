@@ -19,10 +19,10 @@ bot.on('message', msg => {
     console.log(msg.channel);
     // var randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
     var victim = msg.content.substring(7);
-    var channel = bot.channels.cache.get(msg.lastMessageChannelID);
+    var channelReply = bot.channels.cache.find(channel => channel.name === "general");
 
     if (msg.content === "!bully " + victim) {
-        channel.send(victim + " Hey, _nerd_ I'll see you behind the bleachers after school.");
+        channelReply.send(victim + " Hey, _nerd_ I'll see you behind the bleachers after school.");
     }
 
 
