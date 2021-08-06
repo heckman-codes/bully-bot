@@ -21,7 +21,7 @@ bot.on('message', msg => {
     // var randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
 
     if (msg.content === "!bully " + victim) {
-        msg.reply("Hey, _nerd_ I'll see you behind the bleachers after school.");
+        bot.send("Hey, _nerd_ I'll see you behind the bleachers after school.");
     }
 
 
